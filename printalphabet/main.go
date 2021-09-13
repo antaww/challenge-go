@@ -6,7 +6,7 @@ import (
 
 func main() {
 
-	var aRune string = "abcdefghijklmnopqrstuvwxyz\n"
+	var aRune string = "abcdefghijklmnopqrstuvwxyz"
 	for i := 0; i < 26; i++ {
 		z01.PrintRune(rune(aRune[i]))
 	}
