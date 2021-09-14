@@ -22,7 +22,6 @@ func piscine() {
 							z01.PrintRune(32)
 						}
 					}
-
 				}
 			}
 		}
