@@ -5,7 +5,6 @@ import (
 )
 
 func PrintComb2() {
-
 	for i := '0'; i <= '9'; i++ {
 		for j := '0'; j <= '9'; j++ {
 			for k := '0'; k <= '9'; k++ {
@@ -13,7 +12,6 @@ func PrintComb2() {
 					if i > k || (i == k && j >= k) {
 						continue
 					}
-
 					z01.PrintRune(i)
 					z01.PrintRune(j)
 					z01.PrintRune(32)
