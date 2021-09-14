@@ -9,7 +9,7 @@ func PrintComb2() {
 		for j := i + 1; j <= '8'; j++ {
 			for k := j + 1; k <= '8'; k++ {
 				for l := k + 1; l <= '8'; l++ {
-					if k <= 9 && l <= 9 {
+					if k <= '9' && l <= '9' {
 						j := j + 1
 						k := k - 9
 						l = l - 9
