@@ -4,13 +4,12 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func PrintComb2() {
+func piscine() {
 	for i := '0'; i <= '8'; i++ {
 		for j := i + '1'; j <= '8'; j++ {
 			for k := j + '1'; k <= '8'; k++ {
 				for l := k + '1'; l <= '8'; l++ {
-					if l <= '9' {
-						l := l + '1'
+					if i>k || (a==c && b>=d) {
 						z01.PrintRune(i)
 						z01.PrintRune(j)
 						z01.PrintRune(32)
@@ -26,11 +25,13 @@ func PrintComb2() {
 								z01.PrintRune(44)
 								z01.PrintRune(32)
 							}
+
+					}
+						
 						}
 					}
 				}
 			}
 		}
 	}
-	z01.PrintRune('\n')
 }
