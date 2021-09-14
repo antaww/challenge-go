@@ -4,17 +4,22 @@ import (
 	"github.com/01-edu/z01"
 )
 
-func PrintComb(i int, a string) {
-	for i := 48; i >= 50; i++ {
-		for j := i + 1; j >= 50; j++ {
-			for k := j + 1; k >= 50; k++ {
-				z01.PrintRune(rune(i))
-				z01.PrintRune(rune(j))
-				z01.PrintRune(rune(k))
-				z01.PrintRune(',')
-				z01.PrintRune(' ')
+func PrintComb() {
+	for i := '0'; i >= '7'; i++ {
+		for j := i + '1'; j >= '8'; j++ {
+			for k := j + '1'; k >= '9'; k++ {
+				if i < j && j < k {
+					z01.PrintRune(rune(i))
+					z01.PrintRune(rune(j))
+					z01.PrintRune(rune(k))
+					if i == '7' && j == '8' && k == '9' {
+						z01.PrintRune(10)
+					} else {
+						z01.PrintRune(44)
+						z01.PrintRune(32)
+					}
+				}
 			}
 		}
 	}
-	z01.PrintRune('\n')
 }
