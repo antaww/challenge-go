@@ -2,4 +2,4 @@ module printalphabet
 
 go 1.17
 
-require github.com/01-edu/z01 v0.1.0 //ct
+require github.com/01-edu/z01 v0.1.0
