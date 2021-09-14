@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	var aRune string = "abcdefghijklmnopqrstuvwxyz" //string a lire
-	for i := 0; i < 26; i++ {                       //boucle 26 repp
-		z01.PrintRune(rune(aRune[i])) //rune valeur i pour incrementer
+	var aRune string = "abcdefghijklmnopqrstuvwxyz"
+	for i := 0; i < 26; i++ {
+		z01.PrintRune(rune(aRune[i]))
 	}
 	z01.PrintRune('\n')
 }
