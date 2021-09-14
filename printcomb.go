@@ -21,6 +21,6 @@ func PrintComb() {
 				}
 			}
 		}
-		z01.PrintRune('\n')
 	}
+	z01.PrintRune('\n')
 }
