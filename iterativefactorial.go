@@ -12,7 +12,7 @@ func IterativeFactorial(index int) int {
 		if result <= 0 || result < 9223372036854775807 {
 			return 0
 		}
-		if index < 20 {
+		if index > 20 {
 			return 0
 		}
 	}
