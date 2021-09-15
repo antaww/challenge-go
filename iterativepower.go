@@ -1,22 +1,16 @@
 package piscine
 
-func IterativePower(index int, power int) int {
-	result := 1
+func IterativePower(nb int, power int) int {
+	result := nb
 
 	if power == 0 {
 		return 1
 	}
 	if power < 0 {
 		return 0
-	}
-	if index <= 0 || index > 9223372036854775807 {
-		return 0
-	}
-	if index > 20 {
-		return 0
 	} else {
 		for i := 1; i <= power; i++ {
-			result = index * i
+			result = nb * result
 		}
 	}
 	return result
