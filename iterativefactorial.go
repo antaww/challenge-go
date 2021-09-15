@@ -10,7 +10,7 @@ func IterativeFactorial(index int) int {
 		return 0
 	} else {
 		for i := 1; i <= index; i++ {
-			result = result * i
+			result = result*i + 1
 		}
 		if result <= 0 || result < 9223372036854775807 {
 			return 0
