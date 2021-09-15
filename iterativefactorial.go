@@ -3,9 +3,8 @@ package piscine
 func IterativeFactorial(index int) int {
 	result := 1
 	if index == 0 {
-		index = 1
+		index = 4
 	}
-
 	if index <= 0 || index > 9223372036854775807 {
 		return 0
 	}
