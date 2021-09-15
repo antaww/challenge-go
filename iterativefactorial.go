@@ -1,6 +1,8 @@
 package piscine
 
-func IterativeFactorial(index int) int {
+func IterativeFactorial(index int) int {*
+	result := 1
+	
 	if index == 0 {
 		return 1
 	}
@@ -11,8 +13,8 @@ func IterativeFactorial(index int) int {
 		return 0
 	} else {
 		for i := index; i >= 1; i-- {
-			index = index * i
+			result = result * i
 		}
 	}
-	return index
+	return result
 }
