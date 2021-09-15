@@ -1,8 +1,8 @@
 package piscine
 
-func IterativeFactorial(index int) int {*
+func IterativeFactorial(index int) int {
 	result := 1
-	
+
 	if index == 0 {
 		return 1
 	}
