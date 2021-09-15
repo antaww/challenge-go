@@ -16,7 +16,7 @@ func IterativePower(index int, power int) int {
 		return 0
 	} else {
 		for i := power; i <= power; i++ {
-			result = result * index
+			result = result * i
 		}
 	}
 	return result
