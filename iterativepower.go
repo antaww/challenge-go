@@ -3,7 +3,7 @@ package piscine
 func IterativePower(index int, power int) int {
 	result := 1
 
-	if index == 0 {
+	if power == 0 {
 		return 1
 	}
 	if power < 0 {
@@ -15,7 +15,7 @@ func IterativePower(index int, power int) int {
 	if index > 20 {
 		return 0
 	} else {
-		for i := power; i >= 1; i++ {
+		for i := 1; i <= power; i++ {
 			result = index * i
 		}
 	}
