@@ -15,7 +15,7 @@ func IterativePower(index int, power int) int {
 	if index > 20 {
 		return 0
 	} else {
-		for i := power; i <= power; i++ {
+		for i := power; i >= 1; i++ {
 			result = result * i
 		}
 	}
