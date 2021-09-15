@@ -10,7 +10,7 @@ func IterativeFactorial(index int) int {
 	if index > 20 {
 		return 0
 	} else {
-		for i := index; i > 0; i-- {
+		for i := index; i >= 1; i-- {
 			index = index * i
 		}
 	}
