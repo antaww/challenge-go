@@ -2,11 +2,11 @@ package piscine
 
 func ToUpper(s string) string {
 	var phrase string
-	for i := 0; i <= len(s)-1; i++ {
-		if i >= 'a' && i <= 'z' {
-			phrase = string(s[i] - 32)
+	for _, letter := range s {
+		if letter >= 'a' && letter <= 'z' {
+			phrase = string(letter - 32)
 		}
-		phrase += string(s[i])
+		phrase += string(letter)
 	}
 	return phrase
 }
