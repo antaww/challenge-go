@@ -1,15 +1,14 @@
 package piscine
 
-import (
-	"fmt"
-	"strings"
-)
-
 func Index(s string, toFind string) int {
-	mot := s
-	toFindword := toFind
-
-	result := strings.Index(mot, toFindword)
-	fmt.Println(result)
-	return result
+	mot := []rune(s)
+	toFindword := []rune(toFind)
+	TailleMot := len(mot)
+	TailleFind := len(toFindword)
+	for i := 0; i <= TailleMot-TailleFind; i++ {
+		if toFind == s[i:i+TailleFind] {
+			return (i)
+		}
+	}
+	return -1
 }
