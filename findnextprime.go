@@ -1,9 +1,7 @@
 package piscine
 
 func PrimeNumber(nb int) bool {
-
 	prime := true
-
 	for i := 2; i <= nb-1; i++ {
 		if nb%i == 0 {
 			prime = false
@@ -18,5 +16,4 @@ func FindNextPrime(nb int) int {
 	} else {
 		return FindNextPrime(nb + 1)
 	}
-
 }
