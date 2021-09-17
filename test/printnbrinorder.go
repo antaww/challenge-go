@@ -1,4 +1,4 @@
-/*package piscine
+package piscine
 
 func PrintNbrInOrder(n int) {
 	nbr := n
@@ -16,4 +16,3 @@ func PrintNbrInOrder(n int) {
 	}
 	return nbr
 }
-*/
