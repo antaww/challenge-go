@@ -6,6 +6,7 @@ func verif(a rune) bool {
 	}
 	return false
 }
+
 func Capitalize(s string) string {
 	sRune := []rune(s)
 	lettre := true
