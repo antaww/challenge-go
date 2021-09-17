@@ -16,4 +16,9 @@ func main() {
 	NightClub(18, "homme")
 	NightClub(18, "fille")
 	NightClub(20, "chien")
+	Muliplication(4, 2)
+}
+
+func Muliplication(nb1 int, nb2 int) {
+	fmt.Println(nb1 * nb2)
 }

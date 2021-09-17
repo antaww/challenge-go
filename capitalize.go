@@ -1,17 +1,17 @@
 package piscine
 
 func Capitalize(s string) string {
-	var phrase string
-	for _, letter := range s {
-		if (letter >= 'A' && letter <= 'Z') || (letter >= 'a' && letter <= 'z') || (letter >= '0' && letter <= '9') {
-			if s[letter-1] == ' ' {
-				phrase += string(letter - 32)
+	sRune := []rune(s)
+	for i := 0; i <= len(s); i++ {
+		if (sRune[i] >= 'A' && sRune[i] <= 'Z') || (sRune[i] >= 'a' && sRune[i] <= 'z') || (sRune[i] >= '0' && sRune[i] <= '9') {
+			if s[i-1] == ' ' {
+				sRune[i] += sRune[i-32]
 			} else {
-				phrase += string(letter)
+				sRune[i] += sRune[i]
 			}
 		} else {
-			phrase += string(letter)
+			sRune[i] += sRune[i]
 		}
 	}
-	return phrase
+	return string(sRune)
 }
