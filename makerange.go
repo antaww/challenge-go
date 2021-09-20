@@ -7,7 +7,7 @@ func MakeRange(min, max int) []int {
 	}
 	if max >= min {
 		for i := range tableau {
-			tableau[i] = min + 1 - max
+			tableau[i] = min + 1
 		}
 	}
 	return tableau
