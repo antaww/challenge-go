@@ -1,13 +1,13 @@
 package piscine
 
 func MakeRange(min, max int) []int {
-	var tableau []int
+	tableau := make([]int, max-min)
 	if min >= max {
 		return nil
 	}
 	if max >= min {
 		for i := min; i < max; i++ {
-			tableau = make([]int, i)
+			tableau[i] = min + 1
 		}
 	}
 	return tableau
