@@ -8,6 +8,6 @@ func Map(f func(int) bool, a []int) []bool {
 		} else {
 			result = append(result, false)
 		}
-		return result
 	}
+	return result
 }
