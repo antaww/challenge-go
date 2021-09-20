@@ -6,7 +6,7 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 	if max >= min {
-		for i := min; i < max; i++ {
+		for i := range tableau {
 			tableau[i] = min + 1
 		}
 	}
