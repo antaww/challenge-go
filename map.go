@@ -3,7 +3,11 @@ package piscine
 func Map(f func(int) bool, a []int) []bool {
 	result := []bool{}
 	for i := range a {
-		result = append(result, f(i))
+		if f(a[i]) == true {
+			result = append(result, true)
+		} else {
+			result = append(result, false)
+		}
+		return result
 	}
-	return result
 }
