@@ -6,7 +6,7 @@ func AppendRange(min, max int) []int {
 		return nil
 	}
 	if max >= min {
-		for i := 0; i < max; i++ {
+		for i := min; i < max; i++ {
 			tableau = append(tableau, i)
 		}
 	}
