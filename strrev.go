@@ -5,5 +5,5 @@ func StrRev(s string) string {
 	for i, j := 0, len(sRune)-1; i < j; i, j = i+1, j-1 {
 		sRune[i], sRune[j] = sRune[j], sRune[i]
 	}
-	return string(s)
+	return string(sRune)
 }
