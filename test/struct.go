@@ -23,13 +23,11 @@ func (p *personnage) Init(nom string, classe string, niveau int, maxHP int, HP i
 func main() {
 	var p1 personnage
 	p1.Init("Antoine", "Elfe", 1, 100, 40, []string{"potion", "potion", "potion"})
-
 	p1.DisplayInfo()
 	p1.accesInventory()
 	p1.takePot()
 	p1.DisplayInfo()
 	p1.accesInventory()
-
 }
 
 func (p *personnage) takePot() {
