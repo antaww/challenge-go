@@ -9,7 +9,7 @@ import (
 func main() {
 	slashindex := -1
 	for i, letter := range os.Args[0] {
-		if letter == "/" {
+		if letter == '/' {
 			slashindex = i
 		}
 		for _, letter := range os.Args[0][slashindex+1:] {
@@ -17,3 +17,4 @@ func main() {
 		}
 		z01.PrintRune('\n')
 	}
+}
