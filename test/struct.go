@@ -59,6 +59,16 @@ func (p *personnage) accesInventory() {
 	}
 }
 
+func (p *personnage) removeInventory(item string) {
+	inv := &p.inventaire
+	for i := range p.inventaire {
+		if p.inventaire[i] == item {
+			*inv = append(p.inventaire[:i], p.inventaire[i+1:]...)
+		}
+	}
+	p.accesInventory()
+}
+
 func (p personnage) DisplayInfo() {
 	fmt.Println("Nom :", p.nom)
 	fmt.Println("Classe :", p.classe)
