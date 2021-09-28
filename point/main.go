@@ -43,11 +43,11 @@ func main() {
 	points := &point{}
 
 	setPoint(points)
-	for _, letterA := range "x =" {
+	for _, letterA := range "x = " {
 		z01.PrintRune(letterA)
 	}
 	PrintNbr(points.x)
-	for _, letterB := range "y =" {
+	for _, letterB := range ", y = " {
 		z01.PrintRune(letterB)
 	}
 	PrintNbr(points.y)
