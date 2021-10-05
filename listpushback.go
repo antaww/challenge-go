@@ -14,7 +14,6 @@ func ListPushBack(l *List, data interface{}) {
 	n := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = n
-		return
 	}
 	head := l.Head
 	for head.Next != nil {
