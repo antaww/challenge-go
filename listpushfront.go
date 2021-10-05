@@ -4,9 +4,8 @@ func ListPushFront(l *List, data interface{}) {
 	n := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = n
-		l.Tail = l.Head
-		return
+	} else {
+		l.Head.Next = n
+		l.Head = n
 	}
-	n.Next = l.Head
-	l.Head = n
 }
