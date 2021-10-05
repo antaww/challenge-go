@@ -7,6 +7,5 @@ func ListPushFront(l *List, data interface{}) {
 		l.Tail = n
 	} else {
 		l.Head = n
-		l.Head.Next = n
 	}
 }
