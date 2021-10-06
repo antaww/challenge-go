@@ -12,7 +12,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 				return l
 			}
 		}
-		return nil
+		l = l.Next
 	}
 	return nil
 }
