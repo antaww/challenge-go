@@ -1,8 +1,10 @@
 package piscine
 
-func ListSize(l *List, data interface{}) {
+func ListSize(l *List) int {
 	count := 0
-	for l.Head.Next != nil {
+	for l.Head != nil {
 		count += 1
+		l.Head = l.Head.Next
 	}
+	return count
 }
