@@ -2,7 +2,7 @@ package piscine
 
 func ListAt(l *NodeL, pos int) *NodeL {
 	count := 0
-	for l.Next != nil {
+	for l != nil {
 		count += 1
 		l = l.Next
 	}
