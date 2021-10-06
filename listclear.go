@@ -1,5 +1,6 @@
 package piscine
 
 func ListClear(l *List) {
-	l = nil
+	l.Head = nil
+	l.Tail = nil
 }
