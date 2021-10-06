@@ -12,9 +12,9 @@ func ListAt(l *NodeL, pos int) *NodeL {
 			if count2 == pos {
 				return l
 			}
+			count2 += 1
+			l = l.Next
 		}
-		count2 += 1
-		l = l.Next
 	}
 	return nil
 }
