@@ -12,6 +12,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 				return l
 			}
 		}
+		return nil
 	}
 	return nil
 }
