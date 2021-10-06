@@ -5,7 +5,7 @@ func ListAt(l *NodeL, pos int) *NodeL {
 	if pos == 0 {
 		return l
 	}
-	for count <= pos {
+	for count <= pos-1 {
 		if l == nil {
 			return nil
 		}
