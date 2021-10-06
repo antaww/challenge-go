@@ -6,12 +6,14 @@ func ListAt(l *NodeL, pos int) *NodeL {
 		count += 1
 		l = l.Next
 	}
+	count2 := 0
 	if pos <= count {
 		for l != nil {
-			if count == pos {
+			if count2 == pos {
 				return l
 			}
 		}
+		count2 += 1
 		l = l.Next
 	}
 	return nil
