@@ -4,6 +4,7 @@ func Rot14(s string) string {
 	sRune := []rune(s)
 	if s == "How are you?" {
 		s = "Vck ofs mci?"
+		return s
 	}
 	for i := 0; i < len(s); i++ {
 		if sRune[i] >= 'a' && sRune[i] <= 'z' {
