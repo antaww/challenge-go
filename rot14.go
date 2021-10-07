@@ -12,7 +12,7 @@ func Rot14(s string) string {
 		}
 		if sRune[i] >= 'A' && sRune[i] <= 'Z' {
 			if sRune[i]-12 < 'A' {
-				sRune[i] = 'Z'
+				sRune[i] = 'Z' + (t - 'A') + 1
 			}
 			sRune[i] -= 12
 		}
