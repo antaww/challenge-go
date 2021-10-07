@@ -8,6 +8,9 @@ import (
 
 func main() {
 	input_files := os.Args[1:]
+	if len(os.Args) < 2 {
+		fmt.Println("Too many arguments")
+	}
 	if len(input_files) == 0 {
 		fmt.Println("File name missing")
 	} else {
