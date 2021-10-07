@@ -15,7 +15,7 @@ func main() {
 		if err != nil {
 			fmt.Println("Can't read ", input_files[0], "Error : ", err)
 		} else {
-			fmt.Println(string(content))
+			fmt.Print(string(content))
 		}
 	}
 }
