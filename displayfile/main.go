@@ -9,7 +9,7 @@ import (
 func main() {
 	input_files := os.Args[1:]
 	if len(input_files) == 0 {
-		fmt.Println("No file")
+		fmt.Println("File name missing")
 	} else {
 		fmt.Println(input_files[0])
 		content, err := ioutil.ReadFile(input_files[0])
