@@ -11,12 +11,11 @@ func main() {
 	if len(input_files) == 0 {
 		fmt.Println("File name missing")
 	} else {
-		fmt.Println(input_files[0])
 		content, err := ioutil.ReadFile(input_files[0])
 		if err != nil {
 			fmt.Println("Can't read ", input_files[0], "Error : ", err)
 		} else {
-			fmt.Println("File", input_files[0], ": \n", string(content))
+			fmt.Println(string(content))
 		}
 	}
 }
