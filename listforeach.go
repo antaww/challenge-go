@@ -1,9 +1,10 @@
 package piscine
 
 func ListForEach(l *List, f func(*NodeL)) {
-	for l.Head != nil {
-		f(l.Head)
-		l.Head = l.Head.Next
+	actuel := l.Head
+	for actuel != nil {
+		f(actuel)
+		actuel = actuel.Next
 	}
 }
 
